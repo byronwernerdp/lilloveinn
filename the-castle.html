@@ -6,9 +6,13 @@
   <title>The Castle — A Li'l Love Inn</title>
   <meta name="description" content="Newly remodeled contemporary 3BR/2bath home with lake views, 2 decks, fire table, large yard. Sleeps 6-8. Cambridge Springs, PA.">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .prop-gallery-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; padding:0 2rem 2rem; max-width:1300px; margin:0 auto; }
+    @media(max-width:700px){ .prop-gallery-grid { grid-template-columns:1fr 1fr; } }
+    .prop-gallery-grid img { width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
+  </style>
 </head>
 <body>
-
   <nav>
     <a href="index.html"><img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/2083158c-6e88-4050-815c-a9110fbd8290/Logo_JPG2.jpg" alt="A Li'l Love Inn" class="nav-logo"></a>
     <button class="nav-toggle" aria-label="Menu">&#9776;</button>
@@ -27,7 +31,6 @@
     </div>
   </nav>
 
-  <!-- HERO -->
   <section class="prop-hero">
     <div class="hero-bg" style="background-image:url('https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/8ec063ba-4865-4686-a3e4-8607131be95c/IMG_2413.jpeg');background-position:center 70%;"></div>
     <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.0) 50%);z-index:1;"></div>
@@ -50,31 +53,37 @@
     <a href="inquire.html" class="btn">Inquire About This Property</a>
   </section>
 
-  <!-- DESCRIPTION -->
   <section class="prop-description section-bluegray">
     <div class="prop-description-inner">
       <div class="fade-up">
         <h2>Comfort Meets Style.</h2>
         <p>Newly remodeled 3 BR/2 bath home with lake views. Great WiFi. 2 decks, patio sectional furniture, fire pit, large yard — perfect for taking in great company and nature.</p>
         <p>A stunning 6ft island/community table, designer convection oven, flat screen, 4-post bed. Bikes, fire pit. Craft breweries, golf, ski nearby.</p>
-        <p>BBQ grill, Cozy, inviting, spacious — all you need for a perfect getaway.</p>
+        <p>BBQ grill, cozy, inviting, spacious — all you need for a perfect getaway.</p>
       </div>
       <div class="fade-up" style="transition-delay:0.15s">
         <h2>The Space</h2>
         <p>The peace of waking to views of the water and hearing sounds of nature while enjoying the comforts of this stylish home will relax you. The back porch is perfect for a private dinner followed by a sunset toast overlooking the lake from the front deck.</p>
         <p>We have a fire pit, BBQ, corn hole and bikes available.</p>
         <p><em>We do allow dogs! An additional $40 fee per dog.</em></p>
-        <p style="font-size:0.85rem;color:var(--text-mid);">Please note: We no longer have access to kayak or to use the lake for recreational use. We have many excellent options for swimming and kayaking nearby — please let us know and we can help you make arrangements.</p>
+        <p style="font-size:0.85rem;color:var(--text-mid);">Please note: We no longer have access to kayak or to use the lake for recreational use. We have many excellent options for swimming and kayaking nearby.</p>
       </div>
     </div>
   </section>
 
-  <!-- PHOTO GALLERY -->
   <section class="prop-gallery section-bluegray">
     <div class="prop-gallery-grid">
-      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/6d9d7806-9c93-43f0-8f6e-3e99c3e65c45/77a71e0c-268e-4d5e-a6e7-dd4dc87cb5db.jpeg" alt="The Castle">
-      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/0ddb0a80-5a0b-473e-95e0-1089355dd8f9/tempImagekQTYoL.png" alt="The Castle outdoor">
-      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/d1e27097-f9b1-48af-a2d5-a2cb3494082f/tempImageIJkRyC.png" alt="The Castle view">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/8ec063ba-4865-4686-a3e4-8607131be95c/IMG_2413.jpeg" alt="The Castle exterior">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/6fbd0909-26a5-4ebe-b8ff-5c394ae606b7/IMG_3651.jpeg" alt="The Castle front">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/2a10dbca-d710-4538-a11b-46c28e5a0e52/IMG_0506.jpeg" alt="The Castle living room">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/cf438c2a-8759-4e54-8f68-4dc216db3068/IMG_0498.jpeg" alt="The Castle kitchen">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/f3a307a2-00f4-4300-86d8-bc546e8ed541/IMG_3442.jpeg" alt="The Castle bedroom">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/d4c6abcb-1cb1-4431-94b1-a9c63006fe67/RKP_0281.jpg" alt="The Castle deck">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/1d01b043-a979-47d4-aeec-7864f5637561/RKP_0300.jpg" alt="The Castle outdoor area">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/c8578470-c813-44d6-a65e-5496b97be19a/RKP_0316.jpg" alt="The Castle firepit">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/6d9d7806-9c93-43f0-8f6e-3e99c3e65c45/77a71e0c-268e-4d5e-a6e7-dd4dc87cb5db.jpeg" alt="The Castle view">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/0ddb0a80-5a0b-473e-95e0-1089355dd8f9/tempImagekQTYoL.png" alt="The Castle lake">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/d1e27097-f9b1-48af-a2d5-a2cb3494082f/tempImageIJkRyC.png" alt="The Castle grounds">
     </div>
   </section>
 
