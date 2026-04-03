@@ -6,9 +6,13 @@
   <title>Mom &amp; Pop's — A Li'l Love Inn</title>
   <meta name="description" content="Family-focused lakefront cabin on a peninsula. 3 bedrooms, sleeping basement, toy room, media area. Sleeps up to 12. Cambridge Springs, PA.">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .prop-gallery-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; padding:0 2rem 2rem; max-width:1300px; margin:0 auto; }
+    @media(max-width:700px){ .prop-gallery-grid { grid-template-columns:1fr 1fr; } }
+    .prop-gallery-grid img { width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
+  </style>
 </head>
 <body>
-
   <nav>
     <a href="index.html"><img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/2083158c-6e88-4050-815c-a9110fbd8290/Logo_JPG2.jpg" alt="A Li'l Love Inn" class="nav-logo"></a>
     <button class="nav-toggle" aria-label="Menu">&#9776;</button>
@@ -27,7 +31,6 @@
     </div>
   </nav>
 
-  <!-- HERO -->
   <section class="prop-hero">
     <div class="hero-bg" style="background-image:url('https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/a86652ae-e476-4929-86e6-ccbd13a031a0/218034f8-c744-6266-1713-0f9d0606fd47.jpeg');background-position:center 40%;"></div>
     <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.0) 50%);z-index:1;"></div>
@@ -40,19 +43,16 @@
     </div>
   </section>
 
-  <!-- WAVE -->
   <div style="background:#000;line-height:0;">
     <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:80px;display:block;">
       <path d="M0,0 C360,80 1080,0 1440,80 L1440,0 Z" fill="var(--blue-gray-light)"/>
     </svg>
   </div>
 
-  <!-- INQUIRE BUTTON -->
   <section class="section-bluegray" style="text-align:center;padding:2rem;">
     <a href="inquire.html" class="btn">Inquire About This Property</a>
   </section>
 
-  <!-- DESCRIPTION -->
   <section class="prop-description section-bluegray">
     <div class="prop-description-inner">
       <div class="fade-up">
@@ -65,32 +65,35 @@
         <h2>The Space</h2>
         <p>Mom &amp; Pop's is the perfect getaway for a 3-day weekend or longer stays. Enjoy the great room, gaze out the windows to see water surrounding the property on all three sides as it sits on a peninsula sprinkled with evergreens.</p>
         <p>This private, clean, recently built lakefront home is beautifully decorated with a rustic, farmhouse feel and west-facing deck that will draw you each evening for sunset and later to the fire pit. A dock on site.</p>
-        <p>The finished basement is perfect for watching movies on the 65" flat screen while fully reclined in the leather sectional. Fun awaits in the playroom stocked with toys for all ages, an air hockey table, games, puzzles, and so much more. You'll never want to leave!</p>
+        <p>The finished basement is perfect for watching movies on the 65" flat screen while fully reclined in the leather sectional. Fun awaits in the playroom stocked with toys for all ages, an air hockey table, games, puzzles, and so much more.</p>
         <p>Perfect for multi-generational guests — teens and kids escape to the basement while adults find their happy place gazing out at the wildlife: bald eagles, muskrats, beavers, Canadian geese, 17 species of fish, snapping turtles, and lots of bullfrogs!</p>
         <p><em>We do allow dogs! An additional $40 fee per dog.</em></p>
-        <p style="font-size:0.85rem;color:var(--text-mid);">Please note: We no longer have access to kayak or to use the lake for recreational use. We have many excellent options for swimming and kayaking nearby — please let us know and we can help you make arrangements.</p>
+        <p style="font-size:0.85rem;color:var(--text-mid);">Please note: We no longer have access to kayak or to use the lake for recreational use. We have many excellent options for swimming and kayaking nearby.</p>
       </div>
     </div>
   </section>
 
-  <!-- PHOTO GALLERY -->
   <section class="prop-gallery section-bluegray">
     <div class="prop-gallery-grid">
-      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/2408cd34-8357-41dc-a069-a3b528910d63/IMG_3539.JPG" alt="Mom &amp; Pops exterior">
-      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/a86652ae-e476-4929-86e6-ccbd13a031a0/218034f8-c744-6266-1713-0f9d0606fd47.jpeg" alt="Mom &amp; Pops deck view">
-      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/9c4b71b4-3faf-435f-b520-2b1cb275b870/tempImagedg3iZN.png" alt="Property">
-      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/2dac1baa-0963-43ef-934d-fb58d1521e95/tempImageBGWBbR.png" alt="Property">
-      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/0ddb0a80-5a0b-473e-95e0-1089355dd8f9/tempImagekQTYoL.png" alt="Property">
-      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/d1e27097-f9b1-48af-a2d5-a2cb3494082f/tempImageIJkRyC.png" alt="Property">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/a86652ae-e476-4929-86e6-ccbd13a031a0/218034f8-c744-6266-1713-0f9d0606fd47.jpeg" alt="Mom and Pops lake view">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/9c4b71b4-3faf-435f-b520-2b1cb275b870/tempImagedg3iZN.png" alt="Mom and Pops exterior">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/2dac1baa-0963-43ef-934d-fb58d1521e95/tempImageBGWBbR.png" alt="Mom and Pops deck">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/0ddb0a80-5a0b-473e-95e0-1089355dd8f9/tempImagekQTYoL.png" alt="Mom and Pops view">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/d1e27097-f9b1-48af-a2d5-a2cb3494082f/tempImageIJkRyC.png" alt="Mom and Pops interior">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/e76e5a1c-98f6-4cc5-ac93-849c199db226/095de45e-c859-41d5-b345-058eecd9e528.jpeg" alt="Mom and Pops bedroom">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/28bbf4ad-65ab-4111-be9e-09284f3933ab/07d2187a-0af2-42ea-9628-24d167531dc3.jpg" alt="Mom and Pops living room">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/3cf0c7e1-f0e4-42ef-8e47-b37cfdd20b21/f5de2513-d42d-426d-9088-e9bef9dae4c5.jpg" alt="Mom and Pops kitchen">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/cb1a5e87-77d4-4e97-8a0d-bef55e1c2b33/c1fa12ac-4dd5-4578-b133-bfacb1054dab.jpeg" alt="Mom and Pops firepit">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/8a9dd218-b9b0-42f1-8c41-cc3b7fc22bb4/8cdc9d3a-3c05-46b6-8e84-22bd5aced82b.jpeg" alt="Mom and Pops sunset">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/2408cd34-8357-41dc-a069-a3b528910d63/IMG_3539.JPG" alt="Mom and Pops property">
+      <img src="https://images.squarespace-cdn.com/content/v1/6617b4042c2ab03d8de452b0/6d9d7806-9c93-43f0-8f6e-3e99c3e65c45/77a71e0c-268e-4d5e-a6e7-dd4dc87cb5db.jpeg" alt="Mom and Pops grounds">
     </div>
   </section>
 
-  <!-- AMENITIES BAR -->
   <div class="amenities-marquee-bar">
     <span>AMENITIES &nbsp;&nbsp;&nbsp; AMENITIES &nbsp;&nbsp;&nbsp; AMENITIES &nbsp;&nbsp;&nbsp; AMENITIES &nbsp;&nbsp;&nbsp; AMENITIES &nbsp;&nbsp;&nbsp; AMENITIES &nbsp;&nbsp;&nbsp; AMENITIES &nbsp;&nbsp;&nbsp; AMENITIES &nbsp;&nbsp;&nbsp;</span>
   </div>
 
-  <!-- AMENITIES LIST -->
   <section class="amenities-section section-bluegray">
     <div class="amenities-inner">
       <div class="amenity-category fade-up">
@@ -107,7 +110,7 @@
       </div>
       <div class="amenity-category fade-up" style="transition-delay:0.1s">
         <h4>Heating &amp; Cooling</h4>
-        <ul><li>Central air conditioning</li><li>Ceiling fan</li><li>Heating</li></ul>
+        <ul><li>Central air conditioning</li><li>Ceiling fan &amp; heating</li></ul>
         <h4>Internet &amp; Office</h4>
         <ul><li>Great WiFi</li><li>Dedicated workspace</li></ul>
         <h4>Kitchen</h4>
@@ -120,7 +123,6 @@
     </div>
   </section>
 
-  <!-- INQUIRE CTA -->
   <section style="text-align:center;padding:4rem 2rem;background:var(--blue-gray-light);">
     <p style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;margin-bottom:1.5rem;color:var(--text-dark);">Ready to book or have questions?</p>
     <a href="inquire.html" class="btn">Inquire Now</a>
@@ -130,17 +132,10 @@
 
   <footer>
     <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="mom-pops.html">Mom &amp; Pops</a>
-      <a href="lil-love-inn.html">Li'l Love Inn</a>
-      <a href="the-castle.html">The Castle</a>
-      <a href="the-vision.html">The Vision</a>
-      <a href="about.html">About Us</a>
-      <a href="inquire.html">Inquire</a>
+      <a href="index.html">Home</a><a href="mom-pops.html">Mom &amp; Pops</a><a href="lil-love-inn.html">Li'l Love Inn</a><a href="the-castle.html">The Castle</a><a href="the-vision.html">The Vision</a><a href="about.html">About Us</a><a href="inquire.html">Inquire</a>
     </div>
     <p>&copy; 2025 A Li'l Love Inn · Cambridge Springs, PA</p>
   </footer>
-
   <script src="js/main.js"></script>
 </body>
 </html>
