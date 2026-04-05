@@ -570,3 +570,5 @@ footer .footer-links { display: flex; gap: 1.5rem; justify-content: center; flex
 
 /* Make sure things above fold are always visible */
 nav, .home-hero, .prop-hero { opacity: 1 !important; transform: none !important; }
+
+.nav-logo img { max-height: 60px; width: auto; }
