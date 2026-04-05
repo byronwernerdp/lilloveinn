@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="css/style.css">
   <style>
     .simple-page {
-      max-width: 600px;
-      margin: 120px auto 80px;
+      max-width: 700px;
+      margin: 80px auto 80px;
       padding: 0 2rem;
       text-align: center;
     }
@@ -23,20 +23,24 @@
       font-size: 1.05rem;
       line-height: 1.7;
     }
+    .qr-grid {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
     .qr-card {
-      display: inline-block;
       background: #fff;
       border-radius: 14px;
       box-shadow: 0 4px 28px rgba(0,0,0,.10);
       padding: 2rem 2rem 1.5rem;
-      max-width: 260px;
+      max-width: 240px;
       width: 100%;
     }
     .qr-card img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      object-position: center;
+      width: 180px;
+      height: 180px;
+      object-fit: contain;
       border-radius: 8px;
       display: block;
       margin: 0 auto;
@@ -51,12 +55,11 @@
       font-size: .88rem;
       color: #888;
       margin-top: .2rem;
+      margin-bottom: 1rem;
     }
-    .venmo-link {
+    .pay-btn {
       display: inline-block;
-      margin-top: 1.25rem;
       padding: .6rem 1.5rem;
-      background: #008CFF;
       color: #fff;
       border-radius: 6px;
       text-decoration: none;
@@ -64,7 +67,9 @@
       font-weight: 600;
       letter-spacing: .05em;
     }
-    .venmo-link:hover { background: #0070cc; }
+    .pay-btn:hover { opacity: .85; }
+    .venmo-blue { background: #008CFF; }
+    .paypal-blue { background: #003087; }
   </style>
 </head>
 <body>
@@ -86,13 +91,21 @@
 
   <div class="simple-page">
     <h1>PAYMENT OPTIONS</h1>
-    <p class="lead">Scan with your phone camera or click the button below to pay via Venmo.</p>
+    <p class="lead">Scan with your phone camera or click a button below to pay.</p>
 
-    <div class="qr-card">
-      <img src="images/Screenshot+2024-05-09+at+10.05.50+AM.jpeg" alt="Venmo QR Code — Amy Werner">
-      <p class="qr-label">Venmo</p>
-      <p class="qr-sub">Amy Werner</p>
-      <a href="https://venmo.com/ALilLoveInn" target="_blank" rel="noopener" class="venmo-link">Pay on Venmo</a>
+    <div class="qr-grid">
+      <div class="qr-card">
+        <img src="images/Screenshot+2024-05-09+at+10.05.50+AM.jpeg" alt="Venmo QR Code — Amy Werner">
+        <p class="qr-label">Venmo</p>
+        <p class="qr-sub">@ALilLoveInn</p>
+        <a href="https://venmo.com/ALilLoveInn" target="_blank" rel="noopener" class="pay-btn venmo-blue">Pay on Venmo</a>
+      </div>
+      <div class="qr-card">
+        <img src="images/Screenshot+2024-05-09+at+10.04.09%E2%80%AFAM.png" alt="PayPal QR Code — Amy Muckinhaupt">
+        <p class="qr-label">PayPal</p>
+        <p class="qr-sub">Amy Muckinhaupt</p>
+        <a href="https://paypal.me/AmyMuckinhaupt" target="_blank" rel="noopener" class="pay-btn paypal-blue">Pay on PayPal</a>
+      </div>
     </div>
   </div>
 
