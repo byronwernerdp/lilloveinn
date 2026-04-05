@@ -6,18 +6,72 @@
   <title>Payment — A Li'l Love Inn</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
-    .simple-page { max-width: 600px; margin: 140px auto 80px; padding: 0 2rem; text-align: center; }
-    .simple-page h1 { font-size: 2.8rem; letter-spacing: .12em; margin-bottom: 1rem; }
-    .simple-page .lead { color: #666; margin-bottom: 3rem; font-size: 1.05rem; line-height: 1.7; }
-    .qr-card { display: inline-block; background: #fff; border-radius: 14px; box-shadow: 0 4px 28px rgba(0,0,0,.10); padding: 2rem 2rem 1.5rem; max-width: 260px; width: 100%; }
-    .qr-card img { width: 100%; border-radius: 8px; display: block; }
-    .qr-label { margin-top: 1rem; font-size: 1rem; color: #333; font-weight: 600; }
-    .qr-sub { font-size: .88rem; color: #888; margin-top: .2rem; }
+    .simple-page {
+      max-width: 600px;
+      margin: 120px auto 80px;
+      padding: 0 2rem;
+      text-align: center;
+    }
+    .simple-page h1 {
+      font-size: 2.8rem;
+      letter-spacing: .12em;
+      margin-bottom: 1rem;
+    }
+    .simple-page .lead {
+      color: #666;
+      margin-bottom: 2.5rem;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+    .qr-card {
+      display: inline-block;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 4px 28px rgba(0,0,0,.10);
+      padding: 2rem 2rem 1.5rem;
+      max-width: 260px;
+      width: 100%;
+    }
+    .qr-card img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 8px;
+      display: block;
+      margin: 0 auto;
+    }
+    .qr-label {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: #333;
+      font-weight: 600;
+    }
+    .qr-sub {
+      font-size: .88rem;
+      color: #888;
+      margin-top: .2rem;
+    }
+    .venmo-link {
+      display: inline-block;
+      margin-top: 1.25rem;
+      padding: .6rem 1.5rem;
+      background: #008CFF;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: .9rem;
+      font-weight: 600;
+      letter-spacing: .05em;
+    }
+    .venmo-link:hover { background: #0070cc; }
   </style>
 </head>
 <body>
   <nav class="site-nav">
-    <a href="index.html" class="nav-logo"><img src="images/Logo_JPG2.jpg" alt="A Li'l Love Inn"></a>
+    <a href="index.html" class="nav-logo">
+      <img src="images/Logo_JPG2.jpg" alt="A Li'l Love Inn">
+    </a>
     <button class="nav-toggle" aria-label="Menu">&#9776;</button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -29,17 +83,19 @@
       <li><a href="inquire.html">Inquire</a></li>
     </ul>
   </nav>
+
   <div class="simple-page">
     <h1>PAYMENT OPTIONS</h1>
-    <p class="lead">Use your phone camera to scan, or click to pay on your computer or phone.</p>
+    <p class="lead">Scan with your phone camera or click the button below to pay via Venmo.</p>
+
     <div class="qr-card">
-      <a href="https://venmo.com/Amy-Werner-102" target="_blank" rel="noopener">
-        <img src="images/Screenshot+2024-05-09+at+10.05.50+AM.jpeg" alt="Venmo QR Code">
-      </a>
+      <img src="images/Screenshot+2024-05-09+at+10.05.50+AM.jpeg" alt="Venmo QR Code — Amy Werner">
       <p class="qr-label">Venmo</p>
-      <p class="qr-sub">@Amy-Werner</p>
+      <p class="qr-sub">Amy Werner</p>
+      <a href="https://venmo.com/Amy-Werner-102" target="_blank" rel="noopener" class="venmo-link">Pay on Venmo</a>
     </div>
   </div>
+
   <footer class="site-footer">
     <a href="inquire.html" class="btn">INQUIRE</a>
     <div class="footer-socials">
